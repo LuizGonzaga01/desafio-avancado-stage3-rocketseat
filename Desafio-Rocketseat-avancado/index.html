@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <title>Avalie sua mentoria</title>
+
+</head>
+
+<body>
+  <div class="page">
+    <header>
+      <h1>avalie a sua mentoria</h1>
+      <p>Chegou a hora de avaliar o seu mentor. Bora lá?</p>
+      <img src="./images/img1.png"
+        alt="balão de pergunta na cor vermelha com cinco estrelas contento as três primeiras na cor branca e as duas ultiam na cor escura">
+    </header>
+    <div class="cabecalho">
+      <h2>Informações pessoais</h2>
+    </div>
+    <form action="">
+      <fieldset>
+        <div class="fieldset-information">
+          <div class="fieldset-information-begin">
+            <label for="mentor-assessment-name">Nome</label>
+            <input type="text" id="mentor-assessment-name">
+          </div>
+          <div class="fieldset-information-begin">
+            <label for="mentor-assessment-last-name">Sobrenome</label>
+            <input type="text" id="mentor-assessment-last-name">
+          </div>
+        </div>
+        <div class="fieldset-information-email">
+          <label for="mentor-assessment-email">Email <span>(digite um email válido)</span></label>
+          <input type="text" id="mentor-assessment-email">
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Informações do mentor</legend>
+        <div class="information-mentorship">
+          <div class="fieldset-information-mentor">
+            <label for="mentorship">Selecione quem foi o seu mentor</label>
+            <select id="mentorship">
+              <option value="luiz">Luiz</option>
+              <option value="laura">Laura</option>
+              <option value="malu">Malu</option>
+            </select>
+          </div>
+          <div class="fieldset-information-mentor">
+            <label for="information-">Feedback sobre o mentor</label>
+            <textarea id=""></textarea>
+          </div>
+          <div class="fieldset-information-checkbox">
+            <input type="checkbox" id="duvidas">
+            <label for="duvidas">Todas as minhas dúvidas foram esclarecidas durante a mentoria.</label>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Agendando próxima mentoria</legend>
+          <div class="information-mentorship">
+            <div class="col-3">
+
+              <div class="fieldset-information-email">
+                <label for="mentor-assessment-date">Data <span>(DD/MM/AAAA)</span></label>
+                <input type="date" id="mentor-assessment-date">
+              </div>
+              
+              <div class="fieldset-information-email">
+                <label for="mentor-assessment-begin">Das</span></label>
+                <input type="time" id="mentor-assessment-email">
+              </div>
+
+              <div class="fieldset-information-email">
+                <label for="mentor-assessment-end">Até</label>
+                <input type="time" id="mentor-assessment-time">
+              </div>
+
+            </div>
+          </div>
+      </fieldset>
+    </form>
+    <footer>
+      <button class="button" form="my-form">
+          Salvar evento
+      </button>
+  </footer>
+  </div>
+</body>
+
+</html>
